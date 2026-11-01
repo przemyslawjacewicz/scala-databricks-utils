@@ -1,13 +1,12 @@
-package pl.epsilondeltalimit.scalasparkutils.transactional
+package pl.epsilondeltalimit.scala_databricks_utils.transactional
 
 import io.delta.tables.DeltaTable
 import org.apache.hadoop.fs.Path
 import org.apache.spark.sql.SparkSession
-import pl.epsilondeltalimit.scalasparkutils.UnitFunSpec
-import pl.epsilondeltalimit.scalasparkutils.transactional.ThrowWhenNot.throwWhenNotTrue
-import pl.epsilondeltalimit.scalasparkutils.transactional.Transactional._
-import pl.epsilondeltalimit.scalasparkutils.transactional.Using.implicits.javaIoClosable
-import pl.epsilondeltalimit.scalasparkutils.transactional.Using.{using, usingFileSystem}
+import ThrowWhenNot.throwWhenNotTrue
+import Transactional._
+import Using.implicits.javaIoClosable
+import Using.{using, usingFileSystem}
 
 import java.io.IOException
 import scala.io.Source

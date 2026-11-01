@@ -1,11 +1,11 @@
-package pl.epsilondeltalimit.scalasparkutils.transactional
+package pl.epsilondeltalimit.scala_databricks_utils.transactional
 
 import org.apache.hadoop.fs.{FileUtil, Path}
 import org.apache.spark.sql.SparkSession
-import pl.epsilondeltalimit.scalasparkutils.transactional.SingleWithCopyBackup.{Source, delete}
-import pl.epsilondeltalimit.scalasparkutils.transactional.ThrowWhenNot.throwWhenNotTrue
-import pl.epsilondeltalimit.scalasparkutils.transactional.Using.implicits._
-import pl.epsilondeltalimit.scalasparkutils.transactional.Using.usingFileSystem
+import SingleWithCopyBackup.{Source, delete}
+import ThrowWhenNot.throwWhenNotTrue
+import Using.implicits._
+import Using.usingFileSystem
 
 //todo: consider a better handling of backup location
 //todo: consider removing cleanup with default behavior of creating backup in temp location that does not need cleanup

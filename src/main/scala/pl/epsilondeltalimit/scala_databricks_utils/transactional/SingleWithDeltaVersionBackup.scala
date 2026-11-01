@@ -1,13 +1,13 @@
-package pl.epsilondeltalimit.scalasparkutils.transactional
+package pl.epsilondeltalimit.scala_databricks_utils.transactional
 
 import io.delta.tables.DeltaTable
 import org.apache.hadoop.fs.Path
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.max
-import pl.epsilondeltalimit.scalasparkutils.transactional.SingleWithDeltaVersionBackup._
-import pl.epsilondeltalimit.scalasparkutils.transactional.ThrowWhenNot.throwWhenNotTrue
-import pl.epsilondeltalimit.scalasparkutils.transactional.Using.implicits._
-import pl.epsilondeltalimit.scalasparkutils.transactional.Using.usingFileSystem
+import SingleWithDeltaVersionBackup._
+import ThrowWhenNot.throwWhenNotTrue
+import Using.implicits._
+import Using.usingFileSystem
 
 //todo: consider making DeltaTable a source
 case class SingleWithDeltaVersionBackup[O](override val source: String, override val output: String => O)(

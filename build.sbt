@@ -10,7 +10,7 @@ lazy val env = ProjectRef(file("../scala-databricks-env"), "scala-databricks-env
 lazy val root = (project in file("."))
   .dependsOn(env)
   .settings(
-    name         := "scala-spark-utils",
+    name         := "scala-databricks-utils",
     version      := "1.0",
     scalaVersion := "2.13.16",
     scalacOptions ++= Seq("-deprecation", "-encoding", "utf-8", "-feature", "-unchecked"),

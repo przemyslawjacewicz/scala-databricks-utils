@@ -1,4 +1,4 @@
-package pl.epsilondeltalimit.scalasparkutils
+package pl.epsilondeltalimit.scala_databricks_utils.transactional
 
 import org.apache.hadoop.fs.Path
 import org.scalatest.matchers.should.Matchers

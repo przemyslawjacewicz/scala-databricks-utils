@@ -1,4 +1,4 @@
-package pl.epsilondeltalimit.scalasparkutils.transactional
+package pl.epsilondeltalimit.scala_databricks_utils.transactional
 
 import org.apache.hadoop.fs.FileSystem
 import org.apache.spark.sql.SparkSession
